@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="odify">
+        <t t-call="website.layout">
+            <section class="s_comparisons oe_img_bg"
+                     style="background-image: url(&quot;/web/image/website.s_background_image_02&quot;);">
+                <div class="container">
+                <h2 class="text-center o_default_snippet_text">Our Offers</h2>
+                <div class="row">
+                    <t t-foreach="products" t-as="product">
+                        <div class="col-md-4 col-xs-12">
+
+                            <div class="panel bg-gray-light">
+                                <div class="panel-heading text-center"
+                                     style="background-color: rgba(255, 255, 255, 0.1)">
+                                    <h3 style="margin: 0" class="o_default_snippet_text"><h t-esc="product.name"/></h3>
+                                    <p style="margin: 0" class="o_default_snippet_text">
+                                        <h t-field="product.type"/>
+                                    </p>
+                                </div>
+                                <div class="panel-body text-center">
+                                    <h3 style="margin: 0">
+                                        <span class="o_default_snippet_text">$</span>
+                                        <b style="font-size: 60px" class="o_default_snippet_text"><h t-esc="product.list_price"/></b>
+                                        <small class="o_default_snippet_text">.00</small>
+                                    </h3>
+                                    <div class="o_default_snippet_text">user / month (billed annually)</div>
+                                </div>
+                                <ul class="list-group" style="color:grey">
+                                    <li class="list-group-item o_default_snippet_text">Basic sales &amp;amp; marketing
+                                        for up to 2 users
+                                    </li>
+                                    <li class="list-group-item o_default_snippet_text">Account &amp;amp; Sales
+                                        management
+                                    </li>
+                                    <li class="list-group-item o_default_snippet_text">No customization</li>
+                                    <li class="list-group-item o_default_snippet_text">No support</li>
+                                </ul>
+                                <div class="panel-footer text-center">
+                                    <p class="text-muted">
+                                        <i class="o_default_snippet_text">Instant setup, satisfied or reimbursed.</i>
+                                    </p>
+                                    <a href="/contactus" class="btn btn-primary btn-lg o_default_snippet_text">Order
+                                        now
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </t>
+                </div>
+                </div>
+            </section>
+        </t>
+    </template>
+</odoo>
+
+
+
+                        <!--<div class="col-md-4 col-xs-12">
+                          <div class="panel bg-gray-light">
+                            <div class="panel-heading text-center" style="background-color: rgba(255, 255, 255, 0.1)">
+                              <h3 style="margin: 0" class="o_default_snippet_text">Beginner</h3>
+                              <p style="margin: 0" class="o_default_snippet_text">
+                                            Starter package
+                                        </p>
+                            </div>
+                            <div class="panel-body text-center">
+                              <h3 style="margin: 0">
+                                <span class="o_default_snippet_text">$</span>
+                                <b style="font-size: 60px" class="o_default_snippet_text">35</b>
+                                <small class="o_default_snippet_text">.00</small>
+                              </h3>
+                              <div class="o_default_snippet_text">user / month (billed annually)</div>
+                            </div>
+                            <ul class="list-group" style="color:grey">
+                              <li class="list-group-item o_default_snippet_text" >Basic sales &amp;amp; marketing for up to 2 users</li>
+                              <li class="list-group-item o_default_snippet_text">Account &amp;amp; Sales management</li>
+                              <li class="list-group-item o_default_snippet_text">No customization</li>
+                              <li class="list-group-item o_default_snippet_text">No support</li>
+                            </ul>
+                            <div class="panel-footer text-center">
+                              <p class="text-muted">
+                                <i class="o_default_snippet_text">Instant setup, satisfied or reimbursed.</i>
+                              </p>
+                              <a href="/contactus" class="btn btn-primary btn-lg o_default_snippet_text">Order now</a>
+                            </div>
+                          </div>
+                        </div>-->
+                        <!--<div class="col-md-4 col-xs-12">
+                          <div class="panel bg-beta">
+                            <div class="panel-heading text-center" style="background-color: rgba(255, 255, 255, 0.1)">
+                              <h3 style="margin: 0" class="o_default_snippet_text">Professional</h3>
+                              <p style="margin: 0" class="o_default_snippet_text">Enterprise package</p>
+                            </div>
+                            <div class="panel-body text-center">
+                              <h3 style="margin: 0">
+                                <span class="o_default_snippet_text">$</span>
+                                <b style="font-size: 60px" class="o_default_snippet_text">65</b>
+                                <small class="o_default_snippet_text">.00</small>
+                              </h3>
+                              <div class="o_default_snippet_text">user / month (billed annually)</div>
+                            </div>
+                            <ul class="list-group" style="color:grey">
+                              <li class="list-group-item o_default_snippet_text">Complete CRM for any size team</li>
+                              <li class="list-group-item o_default_snippet_text">Get access to all modules</li>
+                              <li class="list-group-item o_default_snippet_text">Limited customization</li>
+                              <li class="list-group-item o_default_snippet_text">Email support</li>
+                            </ul>
+                            <div class="panel-footer text-center">
+                              <p class="text-muted">
+                                <i class="o_default_snippet_text" >Instant setup, satisfied or reimbursed.</i>
+                              </p>
+                              <a href="/contactus" class="btn btn-primary btn-lg o_default_snippet_text">Order now</a>
+                            </div>
+                          </div>
+                        </div>-->
+                        <!--<div class="col-md-4 col-xs-12">
+                          <div class="panel bg-gray-light">
+                            <div class="panel-heading text-center" style="background-color: rgba(255, 255, 255, 0.1)">
+                              <h3 style="margin: 0" class="o_default_snippet_text">Expert</h3>
+                              <p style="margin: 0" class="o_default_snippet_text">Ultimate package</p>
+                            </div>
+                            <div class="panel-body text-center">
+                              <h3 style="margin: 0">
+                                <span class="o_default_snippet_text">$</span>
+                                <b style="font-size: 60px" class="o_default_snippet_text">125</b>
+                                <small class="o_default_snippet_text">.00</small>
+                              </h3>
+                              <div class="o_default_snippet_text">user / month (billed annually)</div>
+                            </div>
+                            <ul class="list-group" style="color:grey">
+                              <li class="list-group-item o_default_snippet_text">Unlimited CRM power and support</li>
+                              <li class="list-group-item o_default_snippet_text">Get access to all modules and features</li>
+                              <li class="list-group-item o_default_snippet_text">Unlimited customization</li>
+                              <li class="list-group-item o_default_snippet_text">24x7 toll-free support</li>
+                            </ul>
+                            <div class="panel-footer text-center">
+                              <p class="text-muted">
+                                <i class="o_default_snippet_text">Instant setup, satisfied or reimbursed.</i>
+                              </p>
+                              <a href="/contactus" class="btn btn-primary btn-lg o_default_snippet_text">Contact us</a>
+                            </div>
+                          </div>
+                        </div>-->
